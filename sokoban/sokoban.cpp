@@ -1,12 +1,15 @@
 #include "raylib.h"
 
 #include "globals.h"
+#include "move.h"
 #include "levels.h"
 #include "player.h"
 #include "graphics.h"
 #include "images.h"
+#include "levels_data.h"
 #include "sounds.h"
 
+move_player mv;
 void update_game() {
     switch (game_state) {
         case MENU_STATE:
@@ -18,16 +21,16 @@ void update_game() {
         case GAME_STATE:
             SetExitKey(0);
             if (IsKeyPressed(KEY_W) || IsKeyPressed(KEY_UP)) {
-                move_player(0, -1);
+                mv.move(0, -1);
                 return;
             } else if (IsKeyPressed(KEY_S) || IsKeyPressed(KEY_DOWN)) {
-                move_player(0, 1);
+                mv.move(0, 1);
                 return;
             } else if (IsKeyPressed(KEY_A) || IsKeyPressed(KEY_LEFT)) {
-                move_player(-1, 0);
+                mv.move(-1, 0);
                 return;
             } else if (IsKeyPressed(KEY_D) || IsKeyPressed(KEY_RIGHT)) {
-                move_player(1, 0);
+                mv.move(1, 0);
                 return;
             } else if (IsKeyPressed(KEY_ESCAPE)) {
                 game_state = RELOAD_REQ_STATE;
@@ -37,9 +40,9 @@ void update_game() {
             if (IsKeyPressed(KEY_ESCAPE) || IsKeyPressed(KEY_ENTER)) {
                 game_state = GAME_STATE;
             } else if (IsKeyPressed(KEY_R)) {
-                unload_level();
-                --level_index;
-                load_next_level();
+                lvl.unload_level();
+                lvl.get_less_index();
+                lvl.load_next_level();
                 game_state = GAME_STATE;
             }
             break;
@@ -61,7 +64,7 @@ void draw_game() {
             break;
         case GAME_STATE:
             draw_loaded_level();
-            draw_player();
+            draw_player(player);
             draw_player_level();
             break;
         case RELOAD_REQ_STATE:
@@ -74,6 +77,7 @@ void draw_game() {
 }
 
 int main() {
+
     SetConfigFlags(FLAG_VSYNC_HINT | FLAG_MSAA_4X_HINT);
     InitWindow(1024, 480, "Sokoban");
     SetTargetFPS(60);
@@ -82,19 +86,18 @@ int main() {
     load_fonts();
     load_images();
     load_sounds();
-    load_next_level();
+    lvl.load_next_level();
 
     while (!WindowShouldClose()) {
         BeginDrawing();
 
-        update_game();
+        update_game( );
         draw_game();
-
         EndDrawing();
     }
     CloseWindow();
 
-    unload_level();
+   lvl.unload_level();
     unload_sounds();
     unload_images();
     unload_fonts();

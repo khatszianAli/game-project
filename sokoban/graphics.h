@@ -2,15 +2,20 @@
 #define GRAPHICS_H
 
 #include "raylib.h"
-
 #include "globals.h"
 #include "images.h"
-#include "levels.h"
 #include "player.h"
 #include "utilities.h"
 
 #include <string>
 #include <cmath>
+
+ float screen_width;
+ float screen_height;
+ float screen_scale; // Used to scale text/UI components size and displacements based on the screen size
+ float cell_size;
+ float shift_to_center_cell_by_x;
+ float shift_to_center_cell_by_y;
 
 void draw_menu() {
     ClearBackground(BLACK);
@@ -41,7 +46,7 @@ void draw_player_level() {
     const float level_top_margin = GAME_LEVEL_Y_SHIFT   * screen_scale;
 
     std::string level_text = std::string("Level ");
-    level_text += std::to_string(level_index + 1);
+    level_text += std::to_string(lvl.get_index() + 1);
     level_text += " out of ";
     level_text += std::to_string(LEVEL_COUNT);
 
@@ -58,15 +63,15 @@ void derive_graphics_metrics_from_loaded_level() {
     screen_height = static_cast<float>(GetScreenHeight());
 
     cell_size = std::min(
-        screen_width  / static_cast<float>(level.columns),
-        screen_height / static_cast<float>(level.rows)
+        screen_width  / static_cast<float>(lvl.get_columns()),
+        screen_height / static_cast<float>(lvl.get_rows())
     ) * CELL_SCALE;
     screen_scale = std::min(
         screen_width,
         screen_height
     ) / SCREEN_SCALE_DIVISOR;
-    float level_width  = static_cast<float>(level.columns) * cell_size;
-    float level_height = static_cast<float>(level.rows)    * cell_size;
+    float level_width  = static_cast<float>(lvl.get_columns()) * cell_size;
+    float level_height = static_cast<float>(lvl.get_rows())    * cell_size;
     shift_to_center_cell_by_x = (screen_width - level_width)   * 0.5f;
     shift_to_center_cell_by_y = (screen_height - level_height) * 0.5f;
 }
@@ -74,12 +79,12 @@ void derive_graphics_metrics_from_loaded_level() {
 void draw_loaded_level() {
     ClearBackground(BLACK);
 
-    for (size_t row = 0; row < level.rows; ++row) {
-        for (size_t column = 0; column < level.columns; ++column) {
+    for (size_t row = 0; row < lvl.get_rows(); ++row) {
+        for (size_t column = 0; column < lvl.get_columns(); ++column) {
             float x = shift_to_center_cell_by_x + static_cast<float>(column) * cell_size;
             float y = shift_to_center_cell_by_y + static_cast<float>(row)    * cell_size;
 
-            char cell = get_level_cell(row, column);
+            char cell = lvl.get_level_cell(row, column);
             switch (cell) {
                 case FLOOR:
                 case GOAL:
@@ -100,7 +105,7 @@ void draw_loaded_level() {
                     draw_image(box_image, x, y, cell_size);
                     break;
                 case BOX_ON_GOAL:
-                    draw_image(box_on_goal_image, x, y, cell_size);
+                    draw_sprite(box_on_goal_sprite, x, y, cell_size);
                     break;
                 default:
                     break;
@@ -109,9 +114,9 @@ void draw_loaded_level() {
     }
 }
 
-void draw_player() {
-    float x = shift_to_center_cell_by_x + static_cast<float>(player_column) * cell_size;
-    float y = shift_to_center_cell_by_y + static_cast<float>(player_row)    * cell_size;
+void draw_player(players &player) {
+    float x = shift_to_center_cell_by_x + static_cast<float>(player.get_column()) * cell_size;
+    float y = shift_to_center_cell_by_y + static_cast<float>(player.get_row())    * cell_size;
     draw_sprite(player_sprite, x, y, cell_size);
 }
 
