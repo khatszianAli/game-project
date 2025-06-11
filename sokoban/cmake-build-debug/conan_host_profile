@@ -1,0 +1,10 @@
+[settings]
+arch=armv8
+os=Macos
+compiler=apple-clang
+compiler.version=16
+compiler.cppstd=17
+compiler.libcxx=libc++
+build_type=Debug
+[conf]
+tools.cmake.cmaketoolchain:generator=Unix Makefiles

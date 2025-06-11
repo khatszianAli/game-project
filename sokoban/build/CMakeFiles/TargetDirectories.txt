@@ -1,0 +1,3 @@
+/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/build/CMakeFiles/sokoban.dir
+/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/build/CMakeFiles/edit_cache.dir
+/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/build/CMakeFiles/rebuild_cache.dir

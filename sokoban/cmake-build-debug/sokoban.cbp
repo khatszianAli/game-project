@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="sokoban"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\raylib\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sokoban">
+				<Option output="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/sokoban" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/IOKit.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/CoreFoundation.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/CoreVideo.framework"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 sokoban"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sokoban/fast">
+				<Option output="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/sokoban" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/IOKit.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/CoreFoundation.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/CoreVideo.framework"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 sokoban/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/globals.h">
+			<Option target="sokoban"/>
+		</Unit>
+		<Unit filename="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/graphics.h">
+			<Option target="sokoban"/>
+		</Unit>
+		<Unit filename="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/images.h">
+			<Option target="sokoban"/>
+		</Unit>
+		<Unit filename="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/levels.cpp">
+			<Option target="sokoban"/>
+		</Unit>
+		<Unit filename="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/levels.h">
+			<Option target="sokoban"/>
+		</Unit>
+		<Unit filename="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/levels_data.h">
+			<Option target="sokoban"/>
+		</Unit>
+		<Unit filename="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/move.h">
+			<Option target="sokoban"/>
+		</Unit>
+		<Unit filename="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/player.h">
+			<Option target="sokoban"/>
+		</Unit>
+		<Unit filename="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/sokoban.cpp">
+			<Option target="sokoban"/>
+		</Unit>
+		<Unit filename="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/sounds.h">
+			<Option target="sokoban"/>
+		</Unit>
+		<Unit filename="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/../../../../../usr/local/lib/cmake/raylib/raylib-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\raylib\"/>
+		</Unit>
+		<Unit filename="/Users/newowner/CLionProjects/simple-sokoban-project/sokoban/../../../../../usr/local/lib/cmake/raylib/raylib-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\raylib\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,36 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -DCMAKE_TOOLCHAIN_FILE=/Users/newowner/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake -G Ninja -S /Users/newowner/CLionProjects/simple-sokoban-project/sokoban -B /Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug
+-- Running vcpkg install
+Detecting compiler hash for triplet arm64-osx...
+Compiler found: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+The following packages are already installed:
+    glfw3:arm64-osx@3.4
+    raylib[core,use-audio]:arm64-osx@5.0
+    vcpkg-cmake:arm64-osx@2023-05-04
+    vcpkg-cmake-config:arm64-osx@2022-02-06#1
+glfw3 provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(glfw3 CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE glfw)
+
+glfw3 provides pkg-config modules:
+
+  # A multi-platform library for OpenGL, window and input
+  glfw3
+
+raylib provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(raylib CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE raylib)
+
+raylib provides pkg-config modules:
+
+  # A simple and easy-to-use library to enjoy videogames programming
+  raylib
+
+All requested installations completed successfully in: 101 us
+-- Running vcpkg install - done
+-- Configuring done (2.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/newowner/CLionProjects/simple-sokoban-project/sokoban/cmake-build-debug

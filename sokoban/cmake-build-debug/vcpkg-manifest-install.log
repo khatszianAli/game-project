@@ -1,0 +1,30 @@
+Detecting compiler hash for triplet arm64-osx...
+Compiler found: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+The following packages are already installed:
+    glfw3:arm64-osx@3.4
+    raylib[core,use-audio]:arm64-osx@5.0
+    vcpkg-cmake:arm64-osx@2023-05-04
+    vcpkg-cmake-config:arm64-osx@2022-02-06#1
+glfw3 provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(glfw3 CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE glfw)
+
+glfw3 provides pkg-config modules:
+
+  # A multi-platform library for OpenGL, window and input
+  glfw3
+
+raylib provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(raylib CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE raylib)
+
+raylib provides pkg-config modules:
+
+  # A simple and easy-to-use library to enjoy videogames programming
+  raylib
+
+All requested installations completed successfully in: 101 us

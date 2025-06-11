@@ -1,0 +1,12 @@
+# ninja log v5
+1053	1445	1749470288515588513	sokoban	8ca383ca4d3b2f79
+8	284	1749470072809685407	CMakeFiles/sokoban.dir/player_globals.cpp.o	3de71c118859eeb0
+12	1022	1749470288086961784	CMakeFiles/sokoban.dir/levels_globalc.cpp.o	c79b2c7e77813542
+0	32	0	clean	ad90e366ad70d77b
+14	1030	1749470288096792531	CMakeFiles/sokoban.dir/images.cpp.o	81061ed4b7720179
+15	1043	1749470288114157516	CMakeFiles/sokoban.dir/globals.cpp.o	974bb2a4900cc6c3
+11	1016	1749470288082729726	CMakeFiles/sokoban.dir/sounds.cpp.o	dc173e7fd965f668
+9	1042	1749470288112587677	CMakeFiles/sokoban.dir/sokoban.cpp.o	49dcffaae5338d7
+0	2076	1749633177407836053	build.ninja	66a508403cafcc27
+11	1053	1749470288123370469	CMakeFiles/sokoban.dir/levels.cpp.o	24e1de821cf86add
+1014	1446	1749470073969028719	CMakeFiles/sokoban.dir/levels_data.cpp.o	174b8675f3adc7a3
